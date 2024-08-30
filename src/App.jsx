@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from './redux/contactOps';
 import { selectError, selectIsLoading } from './redux/selectors';
 import { Oval } from 'react-loader-spinner';
-import photo from '../public/photo.webp';
+import photo from '/photo.webp';
 
 function App() {
   const dispatch = useDispatch();
@@ -19,20 +19,22 @@ function App() {
   }, [dispatch]);
   return (
     <div className="container">
-      <h1 className="h-one">My phone book</h1>
-      <div className="photo-container">
-        <img src={photo} alt="photo" />
-      </div>
-
-      <ContactForm />
-
-      <SearchBox />
-      {isLoading && !error && (
-        <div className="loader">
-          <Oval />
+      <div className="phone-book-container">
+        <h1 className="h-one">My phone book</h1>
+        <div className="photo-container">
+          <img src={photo} alt="photo" />
         </div>
-      )}
-      <ContactList />
+
+        <ContactForm />
+
+        <SearchBox />
+        {isLoading && !error && (
+          <div className="loader">
+            <Oval color="red" secondaryColor="blue" />
+          </div>
+        )}
+        <ContactList />
+      </div>
     </div>
   );
 }

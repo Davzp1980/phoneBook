@@ -1,16 +1,19 @@
 .container {
+  display: flex;
+}
+
+.phone-book-container {
+  margin: 0 auto;
   position: relative;
-  margin-top: 20px;
-  margin-left: 50px;
 }
 .loader {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* transform: translate(-50% -50%); */
   max-width: 200px;
   margin: 0 auto;
   margin-bottom: 20px;
+  z-index: 10;
 }
 
 .h-one {
@@ -22,6 +25,6 @@
 .photo-container {
   width: 460px;
   position: absolute;
-  top: 5%;
-  left: 30%;
+  top: 40px;
+  left: 315px;
 }
