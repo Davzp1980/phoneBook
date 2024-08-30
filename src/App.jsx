@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from './redux/contactOps';
 import { selectError, selectIsLoading } from './redux/selectors';
 import { Oval } from 'react-loader-spinner';
+import photo from '../public/photo.webp';
 
 function App() {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ function App() {
     <div className="container">
       <h1 className="h-one">My phone book</h1>
       <div className="photo-container">
-        <img src="/public/photo.webp" alt="photo" />
+        <img src={photo} alt="photo" />
       </div>
 
       <ContactForm />
