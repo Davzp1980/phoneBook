@@ -1,0 +1,27 @@
+.container {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50% -50%); */
+  max-width: 200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.h-one {
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: teal;
+}
+.photo-container {
+  width: 460px;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+}
