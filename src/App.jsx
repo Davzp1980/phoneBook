@@ -20,7 +20,7 @@ function App() {
     <div className="container">
       <h1 className="h-one">My phone book</h1>
       <div className="photo-container">
-        <img src="../public/photo.webp" alt="photo" />
+        <img src="/public/photo.webp" alt="photo" />
       </div>
 
       <ContactForm />
